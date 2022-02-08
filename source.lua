@@ -8,10 +8,11 @@
 
 -- Made by OlekAleksander for Kavo UI Library
 
+local Notification
 local textColor = Color3.fromRGB(255,0,0)
 local backgroundColor = Color3.fromRGB(10,10,10)
 
-function showNotification(NotificationText,NotificationTime)
+function Notification:showNotification(NotificationText,NotificationTime)
     print("Creating Notification")
     local NotificationGui = Instance.new("ScreenGui")
     local Notification = Instance.new("Frame")
