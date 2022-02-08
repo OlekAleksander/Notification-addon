@@ -11,7 +11,7 @@
 print("Loading Notification Addon")
 
 
-function showNotification(NotificationText,NotificationTime)
+local function showNotification(NotificationText,NotificationTime)
     print("Creating Notification")
     local NotificationGui = Instance.new("ScreenGui")
     local Notification = Instance.new("Frame")
