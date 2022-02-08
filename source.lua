@@ -8,13 +8,15 @@
 
 -- Made by OlekAleksander for Kavo UI Library
 
-print("Loading Notification Addon")
+-- Colors
 
 local textColor = Color3.fromRGB(255,0,0)
 local backgroundColor = Color3.fromRGB(10,10,10)
 
 local function showNotification(NotificationText,NotificationTime)
-    print("Creating Notification")
+	
+    -- Elements
+	
     local NotificationGui = Instance.new("ScreenGui")
     local Notification = Instance.new("Frame")
     local UICorner = Instance.new("UICorner")
@@ -46,11 +48,10 @@ local function showNotification(NotificationText,NotificationTime)
     TextLabel.TextWrapped = true
     TextLabel.TextXAlignment = Enum.TextXAlignment.Left
     
-    print("Showing Notification")
+    -- Notification animation
+	
     TextLabel.Text = NotificationText
     Notification:TweenPosition(UDim2.new(1,-410,1,-60),"Out","Linear",0.25)
-    print("Showed Notification")
-	wait(NotificationTime)
-	Notification:TweenPosition(UDim2.new(1,0,1,-60),"Out","Linear",0.25)
-	print("Closed Notification")
+    wait(NotificationTime)
+    Notification:TweenPosition(UDim2.new(1,0,1,-60),"Out","Linear",0.25)
 end
