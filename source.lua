@@ -10,8 +10,6 @@
 
 print("Loading Notification Addon")
 
-local textColor = Color3.fromRGB(255,0,0)
-local backgroundColor = Color3.fromRGB(10,10,10)
 
 function showNotification(NotificationText,NotificationTime)
     print("Creating Notification")
