@@ -41,7 +41,7 @@ local function showNotification(NotificationText,NotificationTime)
     TextLabel.BackgroundTransparency = 1.000
     TextLabel.Position = UDim2.new(0.025, 0, 0, 0)
     TextLabel.Size = UDim2.new(0, 375, 0, 50)
-    TextLabel.Font = Enum.Font.SourceSans
+    TextLabel.Font = Enum.Font.Gotham
     TextLabel.Text = "Test notification"
     TextLabel.TextColor3 = textColor
     TextLabel.TextSize = 18.000
