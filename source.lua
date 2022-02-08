@@ -53,5 +53,3 @@ function Notification:showNotification(NotificationText,NotificationTime)
 	Notification:TweenPosition(UDim2.new(1,0,1,-60),"Out","Linear",0.25)
 	print("Closed Notification")
 end
-
-Notification:showNotification("Test longgggggggggggggggggggggggggggggggggggggggggggggggggg",2.5)
