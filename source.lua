@@ -13,7 +13,7 @@
 local textColor = Color3.fromRGB(255,0,0)
 local backgroundColor = Color3.fromRGB(10,10,10)
 
-local function showNotification(NotificationText,NotificationTime)
+function showNotification(NotificationText,NotificationTime)
 	
     -- Elements
 	
